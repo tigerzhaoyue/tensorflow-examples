@@ -23,10 +23,11 @@ LEARNING_RATE = 0.01
 TRAINING_EPOCH = 4000
 DISPLAY_MARGIN = 50
 
-csvfile=file('ex1data1.csv','rb')
-reader = csv.reader(csvfile)
-rows = [row for row in reader]
-csvfile.close()
+
+with open('ex1data1.csv','r') as csvfile:
+    reader = csv.reader(csvfile)
+    rows=[row for row in reader]
+    csvfile.close()
 
 X = []
 Y = []
@@ -57,8 +58,12 @@ optimizer = tf.train.GradientDescentOptimizer(LEARNING_RATE).minimize(loss)
 # Initializing the variables
 init = tf.global_variables_initializer()
 
+#add a summary node here 
+merged = tf.summary.merge_all()  
 #train
 with tf.Session() as sess:
+    #edit path here
+    train_writer = tf.summary.FileWriter('D:/tmp/train/',sess.graph)
     sess.run(init)
 
     # Fit all training data

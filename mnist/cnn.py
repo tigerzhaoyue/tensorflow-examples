@@ -8,7 +8,6 @@ Created on Wed Apr 12 16:48:06 2017
 Project : https://github.com/tigerzhaoyue/tensorflow-examples
 """
 
-from __future__ import print_function
 import tensorflow as tf
 
 
@@ -164,5 +163,5 @@ if __name__ == "__main__":
     #first, you need to edit data_path here.
     #If you already download MNIST data_set, set the data_path to your 4 tars.
     #If not set it whatever, tensorflow will auto download it (Just wait)
-    data_path='/tmp/MNIST_data'
+    data_path='D:/tmp/MNIST_data'
     cnn(load_mnist(data_path))
