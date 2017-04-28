@@ -5,8 +5,8 @@ some machine-learning examples
 In this dir,we have some deep/machine learning methods to implement MNIST demo.
 
 ### Linear_regresion
-A example to show how to implement and visualize the data with tensorflow.
+An example to show how to implement and visualize the data with tensorflow.
 Data is from Coursera Machine-Learning MOOC(Andrew Ng).
 
 ### Linear_reg_with_visual
-A example to show how to use tensorboard to visualize data/graph.
+An example to show how to use tensorboard to visualize data/graph.
