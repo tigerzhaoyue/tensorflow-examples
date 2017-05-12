@@ -13,3 +13,8 @@ An example to show how to use tensorboard to visualize data/graph.
 
 ### Cifar10
 In this dir, we have some deep-learning methods to implement cifar10 demo.   acc>0.85
+
+### dog_vs_cat
+a problem from kaggle
+https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition/data
+download dataset first.
